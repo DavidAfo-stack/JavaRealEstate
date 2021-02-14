@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1050.0" styleClass="Background" stylesheets="@estate.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyRealEstate.CustomersListPageController">
+   <children>
+      <Label fx:id="customersLabel" layoutX="401.0" layoutY="14.0" styleClass="HomeText" text="CUSTOMERS">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+      <Button fx:id="homeBtn" layoutX="33.0" layoutY="599.0" mnemonicParsing="false" onAction="#homeBtnListener" styleClass="HomeButtons" text="Home" />
+      <Button fx:id="addNewCustomer" layoutX="870.0" layoutY="598.0" mnemonicParsing="false" onAction="#addNewCustomerBtnListener" styleClass="HomeButtons" text="Add Customer" />
+      <TableView fx:id="custTable" layoutX="9.0" layoutY="118.0" prefHeight="470.0" prefWidth="943.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="firstname" prefWidth="158.39996337890625" text="First Name" />
+            <TableColumn fx:id="lastname" prefWidth="164.0000762939453" text="Last Name" />
+            <TableColumn fx:id="phoneno" prefWidth="167.99993896484375" text="Phone No" />
+            <TableColumn fx:id="presentaddress" prefWidth="192.0" text="Present Address" />
+            <TableColumn fx:id="email" minWidth="0.0" prefWidth="183.2000732421875" text="Email Address" />
+            <TableColumn fx:id="dateofbirth" minWidth="0.0" prefWidth="108.0" text="Date Of Birth" />
+        </columns>
+      </TableView>
+      <TextField fx:id="custSearchBox" layoutX="33.0" layoutY="48.0" onKeyReleased="#custSearch" prefHeight="26.0" prefWidth="150.0" />
+      <Button fx:id="goToPropBtn" layoutX="734.0" layoutY="598.0" mnemonicParsing="false" onAction="#goToPropBtnListener" styleClass="HomeButtons" text="Go To Property" />
+      <Button fx:id="delCustBtn" layoutX="164.0" layoutY="598.0" mnemonicParsing="false" onAction="#delCustBtnlistener" styleClass="HomeButtons" text="Delete Customer" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="homePageImage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="750.0" styleClass="Background" stylesheets="@estate.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyRealEstate.HomeIndexController">
+   <children>
+      <Label layoutX="107.0" layoutY="14.0" prefHeight="83.0" prefWidth="680.0" styleClass="HomeText" stylesheets="@estate.css" text="WELCOME TO DAVID ESTATE " textFill="#7c0b84">
+         <font>
+            <Font name="Arial Bold Italic" size="42.0" />
+         </font>
+      </Label>
+      <Button fx:id="customerBtn" defaultButton="true" layoutX="26.0" layoutY="494.0" mnemonicParsing="false" onAction="#addCustomerBtnListener" styleClass="HomeButtons" stylesheets="@estate.css" text="Add Customer" textFill="#0a5c17" />
+      <ImageView fx:id="houseImage" fitHeight="300.0" fitWidth="300.0" layoutX="217.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/house.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="propertyBtn" defaultButton="true" layoutX="332.0" layoutY="495.0" mnemonicParsing="false" onAction="#addPropertyBtnListener" styleClass="HomeButtons" text="Add Property" textFill="#114784" />
+      <Button fx:id="showCustomerBtn" defaultButton="true" layoutX="168.0" layoutY="494.0" mnemonicParsing="false" onAction="#showCustomerBtnListener" styleClass="HomeButtons" text="Show Customers " textFill="#1c5c23" />
+      <Button fx:id="showPropertiesBtn" defaultButton="true" layoutX="463.0" layoutY="494.0" mnemonicParsing="false" onAction="#showPropertiesBtnListener" styleClass="HomeButtons" text="Show Properties" textFill="#2a2287" />
+      <Button fx:id="showInvoices" layoutX="613.0" layoutY="495.0" mnemonicParsing="false" onAction="#showInvoicesBtnListener" styleClass="HomeButtons" text="Show Invoice" />
+   </children>
+</AnchorPane>
